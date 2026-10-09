@@ -121,17 +121,6 @@ The script exits with `1` on any failure, so you can alert on it.
 | Rates out by 100 times | The datafeed ratio in S/4HANA isn't 1:1. TraderMade quotes per 1 unit, and S/4HANA ignores uploaded factors |
 | An old or odd rate keeps coming back | A test record with a future date was uploaded. Never test with future dates on the instance production reads from |
 
-## Notes
-
-- This is a general integration pattern, not a packaged SAP connector. SAP app names and setup screens vary between releases, so check the SAP configuration against your own system.
-- `.env` is git-ignored. Never commit real keys.
-
-## Resources
-
-- [Tutorial: How to Load Exchange Rates into SAP S/4HANA Cloud with an API](https://tradermade.com/tutorials/sap-s4hana-cloud-exchange-rates-api)
-- [TraderMade REST API documentation](https://tradermade.com/docs/restful-api)
-- [SAP Market Rates Management, Bring Your Own Rates documentation](https://help.sap.com/docs/mrm-byor)
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
